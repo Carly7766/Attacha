@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace Attacha.Scripts.Manager
 {
-    public static class CameraManager
+    public static class CameraUtil
     {
         private static Camera _mainCamera;
         public static Camera Main

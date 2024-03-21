@@ -21,7 +21,7 @@ public class AttributeCard : MonoBehaviour
 
         this.GetAsyncBeginDragTrigger().Subscribe(eventData =>
         {
-            _clickPositionDiff = (Vector2)CameraManager.UI.WorldToScreenPoint(_rectTransform.position) -
+            _clickPositionDiff = (Vector2)CameraUtil.UI.WorldToScreenPoint(_rectTransform.position) -
                                  eventData.position;
         });
 
@@ -40,7 +40,7 @@ public class AttributeCard : MonoBehaviour
     {
         RectTransformUtility.ScreenPointToLocalPointInRectangle(_slotRectTransform,
             screenPosition + _clickPositionDiff,
-            CameraManager.UI, out var localPosition);
+            CameraUtil.UI, out var localPosition);
         return localPosition;
     }
 }
