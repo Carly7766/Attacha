@@ -1,15 +1,15 @@
-using System.Collections;
-using System.Collections.Generic;
-using Attacha.Scripts.Manager;
 using UnityEngine;
 
-public class GameManager : SingletonMonoBehaviour<GameManager>
+namespace Attacha.Scripts.Manager
 {
-    protected override bool DontDestroyOnLoad => true;
-
-    protected override void Awake()
+    public class GameManager : SingletonMonoBehaviour<GameManager>
     {
-        base.Awake();
-        Debug.Log("test");
+        protected override bool DontDestroyOnLoad => true;
+
+        protected override void Awake()
+        {
+            base.Awake();
+            Debug.Log("test");
+        }
     }
 }
