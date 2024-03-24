@@ -17,7 +17,7 @@ namespace Attacha.Scripts.Actor
                 {
                     _attachedEffect.Affect(Time.deltaTime);
                 }
-            });
+            }).AddTo(GameManager.Instance).AddTo(this);
         }
 
         public void Attach(IEffect effect)

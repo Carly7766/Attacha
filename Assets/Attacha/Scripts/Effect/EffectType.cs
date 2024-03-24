@@ -2,6 +2,7 @@ namespace Attacha.Scripts.Effect
 {
     public enum EffectType
     {
-        Move
+        Move,
+        Ghost
     }
 }

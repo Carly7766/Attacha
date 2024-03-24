@@ -4,8 +4,13 @@ namespace Attacha.Scripts.Effect
 {
     public class MoveEffect : IEffect
     {
-        private Vector2 _velocity = new Vector2(1.0f, 0);
+        private Vector2 _velocity;
         private Rigidbody2D _rigidbody;
+
+        public MoveEffect(Vector2 velocity)
+        {
+            _velocity = velocity;
+        }
 
         public void PrepareComponent(GameObject target)
         {
